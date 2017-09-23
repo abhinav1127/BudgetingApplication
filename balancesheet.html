@@ -8,43 +8,34 @@
 
   <body>
       <img src='https://cdn4.iconfinder.com/data/icons/48-bubbles/48/44.Share-128.png'/>
-      <p>Excel</p>
-      <p>Pdf</p>
+      <div id="share">
+          <p>Excel</p>
+          <p>Pdf</p>
+      </div>
   <h1>Balance Sheets</h1>
   <p>Sort: </p>
+  <button id="dropdown">All</button>
   <div id="sort">
       <table id="sorttable">
           <tr>
-              <th>All</th>
+              <td>
+                <p>Start Date:</p>
+                <input type ="date" id="startdate">
+              </td>
+              <td>
+                  <p>End Date:</p>
+                  <input type ="date" id="enddate">
+              </td>
           </tr>
           <tr>
-              <td><form>Start Date:
-              <input type ="text" name="start"></form></td>
-              <td><form>End Date:
-              <input type ="password" name="psw"></form></td>
-          </tr>
-          <tr>
-              <td>Category:
-              <table id="category">
-                  <tr>
-                      <th></th>
-                  </tr>
-                  <tr>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <th></th>
-                  </tr>
-                  <tr>
-                      <th></th>
-                  </tr>
-              </table></td>
+              <td>Category:</td>
+              <td> <button id"categoryitems"></button>
+                  <div id="citems">
+                  </div>
           </tr>
           <tr>
               <td>Amount: </td>
+              <td>Slider</td>
           </tr>
       </table>
   </div>
