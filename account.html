@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Account</title>
+</head>
+
+<body>
+
+<!-- This section is where the user's name, email, phone, and password are displayed -->
+	<p id="nameofuser"></p>
+	<table id="emailpasstable">
+		<tr id="emailrow">
+			<td>
+				<p id="email"></p>
+				<input type="email" id="emailinput" value="Enter email here">
+			</td>
+		</tr>
+		<tr id="phonerow">
+			<td>
+				<p id="phone"></p>
+				<input type="tel" id="phoneinput">
+			</td>
+		</tr>
+		<tr id="passwordrow">
+			<td>
+				<p id="password"></p>
+				<input type="text" id="passwordinput" value="Enter password here">
+			</td>
+		</tr>
+	</table>
+
+<!-- End Section -->
+
+	<button id="editbutton">Edit</button>
+	<button id="deletebutton">Delete Account</button>
+
+	<!-- This div appears when you click the edit button -->
+	<div id="editdiv">
+		<button id="cancelbutton">Cancel</button>
+		<button id="savebutton">Save</button>
+	</div>
+
+	<!-- This div appears when you click the delete button -->
+	<div id="deletediv">
+		<p>Are you sure you want to delete your account?</p>
+		<p id="deleteyes">Yes, delete my account</p>
+		<p id="deleteno">No</p>
+	</div>
+</body>
+</html>
