@@ -1,3 +1,7 @@
 #settingsdiv {
 	display: none;
 }
+
+.show {
+	display: block;
+}
