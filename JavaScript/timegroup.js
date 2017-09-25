@@ -1,4 +1,4 @@
-document.getElementById("settingsdiv").style.display = "none";
+//document.getElementById("settingsdiv").style.display = "none";
 
 function displaySettings() {
 	document.getElementById("settingsdiv").style.display = "block";
