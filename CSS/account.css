@@ -1,0 +1,11 @@
+#editdiv {
+    display: none;
+}
+
+#deletediv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
