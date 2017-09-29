@@ -1,5 +1,3 @@
-var categorytoggle = 0;
-
 function signOut() {
 	//firebase code to sign out a user
 	//if user is signed out:
