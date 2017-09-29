@@ -3,25 +3,23 @@
 <html>
 
 <head>
-	<title id='title'></title> <!-- Fill with JS -->
+	<title id="title"></title> <!-- Fill with JS -->
 	<link rel="stylesheet" type="text/css" href="../CSS/timegroup.css">
 </head>
 
 <body>
-	<div id='home'>
-		<p>Home</p>
-	</div>
+	<p href="home.html">Home</p>
 	<p id="settingsgear">Settings Gear</p>
-	<div id='settingsdiv'>
-		<p>Account</p>
-		<p>Balance Sheet</p>
-		<p>Sign Out</p>
+	<div id="settingsdiv">
+		<p href="account.html">Account</p>
+		<p href="balancesheet.html">Balance Sheet</p>
+		<p id="signout">Sign Out</p>
 	</div>
 
-	<h2 id = 'title1'></h2> <!-- Fill with . Will be same as title -->
-	<div id = 'donutChart'></div>
-	<button id="plussbutton">+</button>
-	<table id='table'>
+	<h2 id ="title1"></h2> <!-- Fill with . Will be same as title -->
+	<div id ="donutChart"></div>
+	<button id="plusbutton">+</button>
+	<table id="table">
 		<tr>
 			<th>Date</th>
 			<th>Amount</th>
@@ -29,8 +27,28 @@
 			<th>Cash/Card</th>
 		</tr>
 		<!-- The rest of this table needs to dynamically appear-->
+		<tr id="newrow">
+			<td>
+				<input type="date" id="newdate">
+			</td>
+			<td>
+				<input type="number" id="newamount">
+			</td>
+			<td>
+				<button id="showcategories">Category</button>
+				<div id="categoryitems">
+					<!-- Fill this from firebase -->
+				</div>
+			</td>
+			<td>
+				<button id="cashbutton">Cash</button>
+				<button id="cardbutton">Card</button>
+			</td>
+			<td>
+				<button id="addbutton">Add</button>
+			</td>
+		</tr>
 	</table>
-
 	<script src="../JavaScript/timegroup.js"></script>
 </body>
 </html>

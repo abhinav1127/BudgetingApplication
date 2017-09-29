@@ -5,3 +5,15 @@
 .show {
 	display: block;
 }
+
+#newrow {
+	display: none;
+}
+
+#categoryitems {
+	display: none;
+}
+
+#settingsgear {
+	z-index: 2;
+}
