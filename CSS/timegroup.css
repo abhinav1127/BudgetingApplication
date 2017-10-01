@@ -1,15 +1,7 @@
-#settingsdiv {
+.hide {
 	display: none;
-}
-
-.show {
-	display: block;
 }
 
 #newrow {
-	display: none;
-}
-
-#categoryitems {
 	display: none;
 }
