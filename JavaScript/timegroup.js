@@ -10,8 +10,10 @@ document.getElementById("settingsgear").addEventListener("click", displaySetting
 function signOut() {
 	//firebase code to sign out a user
 	//if user is signed out:
-	window.location.href = "signin.html";
+	window.location.href = "../HTML/signin.html";
 }
+
+document.getElementById("signout").addEventListener("click", signOut);
 
 /*
 	Include something here to hide settings div if rest of page is clicked
@@ -38,7 +40,7 @@ function toggleCategories() {
 		document.getElementById("categoryitems").style.display = "block";
 		categorytoggle = 1;
 	}
-	
+
 	else {
 		document.getElementById("categoryitems").style.display = "none";
 		categorytoggle = 0;
@@ -52,7 +54,7 @@ function toggleSettings() {
 		document.getElementById("settingsdiv").style.display = "block";
 		settingstoggle = 1;
 	}
-	
+
 	else {
 		document.getElementById("settingsdiv").style.display = "none";
 		settingstoggle = 0;

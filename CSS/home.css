@@ -1,3 +1,11 @@
 #tutorial, #newtimegroup, #alerts, #checkbutton, #cancelbutton {
     display: none;
 }
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
