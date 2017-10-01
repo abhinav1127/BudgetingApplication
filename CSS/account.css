@@ -6,6 +6,18 @@
     display: none;
 }
 
-.show {
-    display: block;
+#settingsdiv {
+    display: none;
+}
+
+.editinfo {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.displayinfo {
+
 }
