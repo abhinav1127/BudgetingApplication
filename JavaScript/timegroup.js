@@ -1,8 +1,10 @@
 function signOut() {
 	//firebase code to sign out a user
 	//if user is signed out:
-	window.location.href = "signin.html";
+	window.location.href = "../HTML/signin.html";
 }
+
+document.getElementById("signout").addEventListener("click", signOut);
 
 /*
 	Include something here to hide settings div if rest of page is clicked
@@ -25,7 +27,7 @@ function newRow() {
 document.getElementById("plusbutton").addEventListener("click", newRow);
 
 function toggleCategories() {
-	document.getElementById("categorydiv").classList.toggle("hide");
+  document.getElementById("categorydiv").classList.toggle("hide");
 }
 
 document.getElementById("categorydiv").classList.toggle("hide");
