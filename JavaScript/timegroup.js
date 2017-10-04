@@ -43,7 +43,7 @@ document.getElementById("settingsgear").addEventListener("click", toggleSettings
 
 function hideNewRow() {
 	document.getElementById("newrow").style.display = "none";
-	document.getElementById("categorydiv").classList.toggle("hide");
+	document.getElementById("categorydiv").classList.add("hide");
 }
 
 document.getElementById("addbutton").addEventListener("click", hideNewRow);
