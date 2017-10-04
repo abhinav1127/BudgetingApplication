@@ -7,26 +7,29 @@
 </head>
 
 <body>
-	<div id='home'></div>
+	<div id='home' href="../HTML/home.html"></div>
 	<!-- This section is where the user's name, email, phone, and password are displayed -->
 	<p id="nameofuser"></p>
 	<table id="emailpasstable">
 		<tr id="emailrow">
 			<td>
-				<p id="email"></p>
-				<input type="email" id="emailinput" value="Enter email here">
+				<p>Email: </p>
+                <p id="email" class = 'displayinfo'> <!--gets email String --></p>
+				<input type="email" id="emailinput" value="Enter email here" class = 'editinfo'>
 			</td>
 		</tr>
 		<tr id="phonerow">
 			<td>
-				<p id="phone"></p>
-				<input type="tel" id="phoneinput">
+				<p>Phone: </p>
+                <p id="phone" class = 'displayinfo'><!--gets phone String --> </p>
+				<input type="tel" id="phoneinput" class = 'editinfo' value="Enter phone here">
 			</td>
 		</tr>
 		<tr id="passwordrow">
 			<td>
-				<p id="password"></p>
-				<input type="text" id="passwordinput" value="Enter password here">
+				<p>Password: </p>
+                <p id="password" class = 'displayinfo'> <!--gets password String (will be hidden)--> </p>
+				<input type="text" id="passwordinput" value="Enter password here" class = 'editinfo'>
 			</td>
 		</tr>
 	</table>
@@ -45,15 +48,16 @@
 	<!-- This div appears when you click the delete button -->
 	<div id="deletediv">
 		<p>Are you sure you want to delete your account?</p>
-		<p id="deleteyes">Yes, delete my account</p>
-		<p id="deleteno">No</p>
+		<button id="deleteyes">Yes, delete my account</button>
+		<button id="deleteno">No</button>
 	</div>
 
-    <p id="settingsgear">Settings gear</p>
+    <p id="settingsgear">Settings Gear</p>
     <div id='settingsdiv'>
         <p>Account</p>
         <p>Balance Sheets</p>
         <p>Sign Out</p>
     </div>
+    <script src='../JavaScript/account.js'></script>
 </body>
 </html>

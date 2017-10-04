@@ -3,9 +3,21 @@
 }
 
 #deletediv {
+    display: none;a
+}
+
+#settingsdiv {
     display: none;
 }
 
-.show {
-    display: block;
+.editinfo {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.displayinfo {
+
 }
