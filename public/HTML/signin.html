@@ -5,7 +5,6 @@
 <head>
 	<title>Welcome!</title>
 	<link rel="stylesheet" type="text/css" href="../css/signin.css">
-	<script src="signin.js"></script>
 </head>
 
 <body>
@@ -21,9 +20,6 @@
 			</tr>
 		</table>
 	</div>
-
-	<button>Login</button>
-
 	<div id="signup">
 		<table>
 			<tr>
@@ -41,8 +37,24 @@
 		</table>
 	</div>
 
-	<button>Sign Up</button>
+	<button id="loginbutton">Login</button>
 
+	<button id="signupbutton">Sign Up</button>
+
+	<script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDU79A10L8pF-NEm9xTphI9i64LdAbPS9w",
+	    authDomain: "budgetapp-bcb65.firebaseapp.com",
+	    databaseURL: "https://budgetapp-bcb65.firebaseio.com",
+	    projectId: "budgetapp-bcb65",
+	    storageBucket: "",
+	    messagingSenderId: "24425259531"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="../JavaScript/signin.js"></script>
 </body>
 
 </html>
