@@ -11,8 +11,18 @@ function login() {
 			// Handle Errors here.
 			var errorCode = error.code;
 			var errorMessage = error.message;
+			if (error) {
+				console.log(errorMessage);
+			}
 		});
 
+		firebase.auth().onAuthStateChanged(function(user) {
+			if (user) {
+				var user = firebase.auth().currentUser;
+				console.log(user);
+				console.log("logged in");
+			}
+		});
 	}
 
 	else {
@@ -29,15 +39,18 @@ function signUp() {
 		var fullname = document.getElementById("name").value;
 
 		firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-		// Handle Errors here.
-		var errorCode = error.code;
-		var errorMessage = error.message;
+			// Handle Errors here.
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			console.log(error.message);
 		});
 
 		firebase.auth().onAuthStateChanged(function(user) {
 			if (user) {
 				var user = firebase.auth().currentUser;
+				console.log("Account Created");
 				console.log(user);
+				console.log(user.auth);
 
 				firebase.database().ref('users/' + user.uid).set({
 					email: user.email,
@@ -52,12 +65,4 @@ function signUp() {
 		document.getElementById("login").style.display = "none";
 		console.log("change to sign in");
 	}	
-}
-
-function writeUserData(userId, name, email, imageUrl) {
-	firebase.database().ref('users/' + userId).set({
-		username: name,
-		email: email,
-		profile_picture : imageUrl
-	});
 }
