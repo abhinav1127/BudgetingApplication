@@ -1,0 +1,32 @@
+{
+	"users": {
+		"id": {
+			"name": "",
+			"phonenumber": "",
+			"email": "",
+			"timegroups": {
+				"id": {
+					"name": "",
+					"datestart": "",
+					"dateend": "",
+					"spendinglimit": ["amount","unitoftime"],
+					"alerts": {
+						"days": [],
+						"time": ""
+					},
+					"data" : [
+						{
+							"amountspent": "",
+							"category": "",
+							"date/time": "",
+							"reason": "",
+							"cashcard": ""
+						},
+						{
+						}
+					]
+				}
+			}
+		}
+	}
+}
