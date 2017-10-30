@@ -3,7 +3,6 @@ var settingsCounter = 0;
 document.getElementById('settingsgear').addEventListener('click', showHideSettings);
 
 function showHideSettings() {
-    console.log('hello');
     if (settingsCounter % 2 == 0) {
         console.log('1');
         document.getElementById('settingsdiv').style.display= 'block';
