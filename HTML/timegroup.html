@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title id="title"></title> <!-- Fill with JS -->
+	<link rel="stylesheet" type="text/css" href="../CSS/timegroup.css">
+</head>
+
+<body>
+	<a href="home.html">Home</a>
+	<p id="settingsgear">Settings Gear</p>
+	<div id="settingsdiv">
+		<a href="account.html">Account</a>
+		<a href="balancesheet.html">Balance Sheet</a>
+		<p id="signout">Sign Out</p>
+	</div>
+
+	<h2 id ="title1"></h2> <!-- Fill with . Will be same as title -->
+	<div id ="donutChart"></div>
+	<button id="plusbutton">+</button>
+	<table id="table">
+		<tr>
+			<th>Date</th>
+			<th>Amount</th>
+			<th>Category</th>
+			<th>Cash/Card</th>
+		</tr>
+		<!-- The rest of this table needs to dynamically appear-->
+		<tr id="newrow">
+			<td>
+				<input type="date" id="newdate">
+			</td>
+			<td>
+				<input type="number" id="newamount">
+			</td>
+			<td>
+				<button id="categorydrop">Category</button>
+				<div id="categorydiv">
+					<p>hello</p>
+					<!-- Fill this from firebase -->
+				</div>
+			</td>
+			<td>
+				<button id="cashbutton">Cash</button>
+				<button id="cardbutton">Card</button>
+			</td>
+			<td>
+				<button id="addbutton">Add</button>
+			</td>
+		</tr>
+	</table>
+	<script src="../JavaScript/timegroup.js"></script>
+</body>
+</html>

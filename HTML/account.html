@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Account</title>
+    <link rel="stylesheet" href="../CSS/account.css" />
+</head>
+
+<body>
+	<div id='home' href="../HTML/home.html"></div>
+	<!-- This section is where the user's name, email, phone, and password are displayed -->
+	<p id="nameofuser"></p>
+	<table id="emailpasstable">
+		<tr id="emailrow">
+			<td>
+				<p>Email: </p>
+                <p id="email" class = 'displayinfo'> <!--gets email String --></p>
+				<input type="email" id="emailinput" value="Enter email here" class = 'editinfo'>
+			</td>
+		</tr>
+		<tr id="phonerow">
+			<td>
+				<p>Phone: </p>
+                <p id="phone" class = 'displayinfo'><!--gets phone String --> </p>
+				<input type="tel" id="phoneinput" class = 'editinfo' value="Enter phone here">
+			</td>
+		</tr>
+		<tr id="passwordrow">
+			<td>
+				<p>Password: </p>
+                <p id="password" class = 'displayinfo'> <!--gets password String (will be hidden)--> </p>
+				<input type="text" id="passwordinput" value="Enter password here" class = 'editinfo'>
+			</td>
+		</tr>
+	</table>
+
+	<!-- End Section -->
+
+	<button id="editbutton">Edit</button>
+	<button id="deletebutton">Delete Account</button>
+
+	<!-- This div appears when you click the edit button -->
+	<div id="editdiv">
+		<button id="cancelbutton">Cancel</button>
+		<button id="savebutton">Save</button>
+	</div>
+
+	<!-- This div appears when you click the delete button -->
+	<div id="deletediv">
+		<p>Are you sure you want to delete your account?</p>
+		<button id="deleteyes">Yes, delete my account</button>
+		<button id="deleteno">No</button>
+	</div>
+
+    <p id="settingsgear">Settings Gear</p>
+    <div id='settingsdiv'>
+        <p>Account</p>
+        <p>Balance Sheets</p>
+        <p>Sign Out</p>
+    </div>
+    <script src='../JavaScript/account.js'></script>
+</body>
+</html>
