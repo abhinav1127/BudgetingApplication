@@ -4,17 +4,16 @@
 
 <head>
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="../css/home.css">
-	<script src="home.js"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/home.css">
 </head>
 
 <body>
-	<div id='home'>Home</div>
+	<div id='home'>Home</div> <!-- illuminated icon, NOT a button -->
 	<button id="settingsicon">Settings</button>
 	<div id='settings'>
 		<a href="account.html">Account</a>
-		<a href="balancesheets.html">Balance Sheet</a>
-		<p>Sign Out</p>
+		<a href="balancesheet.html">Balance Sheet</a>
+		<a href= "logo.html">Sign Out</a>
 
 	</div>
 
@@ -25,42 +24,45 @@
 		<p id="dismiss">Click to Dismiss</p>
 	</div>
 
+	<div id="timegroups">
+	</div>
+
 	<button id="plusbutton">+</button>
 	<div id="newtimegroup">
 		<p id="settitle">Set Title</p>
 		<input type="text" id="settitleinput" value="Set Title">
 		<p id="spendinglimit">Spending Limit</p>
-		<input type="number" id="spendinglimit">
+		<input type="number" min="0" id="spendinglimitinput">
 		<p id="per">per</p>
 		<button id="perioddrop">dropdown</button>
 		<div id="perioddropcontent">
-			<p id="day">day</p>
-			<p id="week">week</p>
-			<p id="month">month</p>
-			<p id="year">yr</p>
+			<button id="day">day</button>
+			<button id="week">week</button>
+			<button id="month">month</button>
+			<button id="year">yr</button>
 		</div>
 		<p id="alerts">Alerts</p>
 		<table id="alerttable">
-			<tr>
-				<td>Frequency</td>
+			<tr id="tr1">
+				<td id="frequency">Frequency</td>
 				<td>
-					<p id="sunday">S</p>
-					<p id="monday">M</p>
-					<p id="tuesday">T</p>
-					<p id="wednesday">W</p>
-					<p id="thursday">T</p>
-					<p id="friday">F</p>
-					<p id="saturday">S</p>
+					<button id="sunday">S</button>
+					<button id="monday">M</button>
+					<button id="tuesday">T</button>
+					<button id="wednesday">W</button>
+					<button id="thursday">T</button>
+					<button id="friday">F</button>
+					<button id="saturday">S</button>
 				</td>
 			</tr>
-			<tr>
-				<td>Time</td>
+			<tr id="tr2">
+				<td id="time">Time</td>
 				<td>
 					<input type="time" id="alertime">
 				</td>
 			</tr>
 			<tr id="addalerttimerow">
-				<td>Add another time</td>
+				<td><button id="addClock">Add another time</button></td>
 			</tr>
 		</table>
 		<button id="checkbutton">Check</button>
@@ -68,7 +70,7 @@
 	</div>
 	<div id="timegroupdiv">
 	</div>
-
+	<script src="../JavaScript/home.js"></script>
 </body>
 
 </html>
